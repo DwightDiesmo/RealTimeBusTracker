@@ -63,6 +63,7 @@ function move() {
   // Make sure you call move() after you increment the counter.
   setTimeout(() => {
     if (counter >= sdGreenLine.length) return;
+    document.getElementById("text-button").innerHTML = sdGreenLine[counter].name;
     marker.setLngLat(sdGreenLine[counter].lgnlat);
     counter++;
     move();
